@@ -20,8 +20,9 @@ Commands:
 
 @Client.on_message(filters.command(["start","help","repo","source"]))
 async def start(_: Client, m: t.Message):
-    await m.reply_text(
-        startText,
+    await = m.reply_photo(
+        photo = “https://telegra.ph/file/9567207165204df2503bf.jpg” , 
+        caption = startText,
         reply_markup=t.InlineKeyboardMarkup(
             [
                 [
