@@ -28,7 +28,7 @@ async def start(_: Client, m: t.Message):
         reply_markup=t.InlineKeyboardMarkup(
             [
                 [
-                    t.InlineKeyboardButton(text="Source",url="https://github.com/Qewertyy/SDWaifuRobot")
+                    t.InlineKeyboardButton(text="Support",url="https://t.me/Ahjin_sprt")
                 ]
             ]
         )
