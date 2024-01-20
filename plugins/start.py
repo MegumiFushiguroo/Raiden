@@ -18,7 +18,7 @@ Commands:
 /gemini: gemini by google
 """
 
-Aaru = “https://telegra.ph/file/9567207165204df2503bf.jpg”
+Aaru = https://telegra.ph/file/9567207165204df2503bf.jpg
 
 @Client.on_message(filters.command(["start","help","repo","source"]))
 async def start(_: Client, m: t.Message):
