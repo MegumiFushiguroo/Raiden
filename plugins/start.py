@@ -4,7 +4,7 @@ from pyrogram import Client, filters, types as t
 from bot import StartTime
 
 startText = """
-Credit:- "@LexicaAPI".
+Credit:- @LexicaAPI.
 Commands:
 `/draw`: create images
 `/upscale`: upscale your images
