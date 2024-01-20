@@ -3,7 +3,7 @@
 from pyrogram import Client, filters, types as t
 from bot import StartTime
 
-startText = """
+startText = ''' 
 Bot by:- @LeviAckerman1709.
 Credit:- @LexicaAPI.
 Commands:
@@ -16,9 +16,9 @@ Commands:
 /palm: palm by google
 /reverse: reverse image search
 /gemini: gemini by google
-"""
+'''
 
-Aaru = https://telegra.ph/file/9567207165204df2503bf.jpg
+Aaru ="https://telegra.ph/file/9567207165204df2503bf.jpg"
 
 @Client.on_message(filters.command(["start","help","repo","source"]))
 async def start(_: Client, m: t.Message):
