@@ -3,7 +3,7 @@
 from pyrogram import Client, filters, types as t
 from bot import StartTime
 
-startText = "https://telegra.ph/file/d0d0a7f81665ff884a59b.jpg""
+startText = """
 Bot by:- @LeviAckerman1709.
 Credit:- @LexicaAPI.
 Commands:
@@ -20,9 +20,8 @@ Commands:
 
 @Client.on_message(filters.command(["start","help","repo","source"]))
 async def start(_: Client, m: t.Message):
-    await = m.reply_photo(
-        photo = “” , 
-        caption = startText,
+    await m.reply_text(
+        startText,
         reply_markup=t.InlineKeyboardMarkup(
             [
                 [
