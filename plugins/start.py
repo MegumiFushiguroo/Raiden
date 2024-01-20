@@ -23,7 +23,7 @@ Aaru = “https://telegra.ph/file/9567207165204df2503bf.jpg”
 @Client.on_message(filters.command(["start","help","repo","source"]))
 async def start(_: Client, m: t.Message):
     await = m.reply_photo(
-        photo = Aaru, 
+        Aaru, 
         caption = startText,
         reply_markup=t.InlineKeyboardMarkup(
             [
