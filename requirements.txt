@@ -1,6 +1,6 @@
 Pyrogram
 TgCrypto
 uvloop
-lexica-api
+lexica-api==1.5.4
 httpx[http2]
 python-dotenv
