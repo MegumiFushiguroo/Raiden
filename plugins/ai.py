@@ -2,8 +2,9 @@
 
 from pyrogram import Client, filters, types as t
 from Utils import getText,ChatCompletion,getMedia,geminiVision
+from lexica.constants import languageModels
 
-@Client.on_message(filters.command(["gpt","bard","llama","mistral","palm","gemini"]))
+@Client.on_message(filters.command([i for i in dir(languageModels) if not i.startswith("__")]))
 async def chatbots(_: Client,m: t.Message):
     prompt = getText(m)
     media = getMedia(m)
@@ -27,7 +28,7 @@ async def chatbots(_: Client,m: t.Message):
             reply_to_message_id=m.id
             )
         return
-    await m.reply_text(output['parts'][0]['text'] if model=="gemini" else output)
+    await m.reply_text(output[0]['text'] if model=="gemini" else output)
 
 async def askAboutImage(_:Client,m:t.Message,mediaFiles: list,prompt:str):
     images = []
