@@ -1,6 +1,6 @@
 
 
-from lexcia import bot
+from lexica import bot
 from pyrogram import filters, types
 
 
