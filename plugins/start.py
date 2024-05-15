@@ -5,7 +5,6 @@ from bot import StartTime
 
 startText = ''' 
 Bot by:- @LeviAckerman1709.
-Credit:- @LexicaAPI.
 Commands:
 /draw: create images
 /upscale: upscale your images
