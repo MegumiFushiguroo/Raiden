@@ -48,7 +48,7 @@ async def chat(Client : Client, message):
 
     try:
         start_time = time.time()
-        await app.send_chat_action(message.chat.id, ChatAction.TYPING)
+        await app.send_chat_action(message.chat.id, action = ChatAction.TYPING)
         if len(message.command) < 2:
             await message.reply_text(
             "**Hello! How can I assist you today?**")
@@ -65,4 +65,4 @@ async def chat(Client : Client, message):
             os.remove('output.mp3')            
 
     except Exception as e:
-        await message.reply_text(f"**Error**: {e} ") 
+        await message.reply_text(f"**Error**: {e} ")
