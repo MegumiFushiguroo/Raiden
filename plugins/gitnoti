@@ -1,6 +1,6 @@
 
 
-from nandha import bot
+from pyrogram import bot
 from pyrogram import filters, types
 
 
