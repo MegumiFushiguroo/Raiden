@@ -3,6 +3,7 @@
 from pyrogram import Client, filters, types as t
 from Utils import getText,ChatCompletion,getMedia,geminiVision
 from lexica.constants import languageModels
+from gtts import gTTS
 
 @Client.on_message(filters.command([i for i in dir(languageModels) if not i.startswith("__")]))
 async def chatbots(_: Client,m: t.Message):
