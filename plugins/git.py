@@ -1,6 +1,6 @@
 
 
-from lexica import bot
+from lexica import Client 
 from pyrogram import filters, types
 
 
@@ -47,7 +47,7 @@ async def send_commit_message(commit_id):
         reply_markup=types.InlineKeyboardMarkup(button)
     )
 
-@bot.on_message(filters.chat(SUPPORT_CHAT) & ~filters.bot, group=3)
+@Client.on_message(filters.chat(SUPPORT_CHAT) & ~filters.bot, group=3)
 async def notify_commit(_, message):
     global commit_ids
     if len(commit_ids) == 0:
