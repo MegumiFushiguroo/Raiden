@@ -7,6 +7,8 @@ from gtts import gTTS
 import os, time
 from pyrogram.enums import ChatAction
 
+openai.api_key = "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"
+
 @Client.on_message(filters.command([i for i in dir(languageModels) if not i.startswith("__")]))
 async def chatbots(_: Client,m: t.Message):
     prompt = getText(m)
