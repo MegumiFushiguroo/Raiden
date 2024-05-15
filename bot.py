@@ -7,6 +7,7 @@ from pyrogram import Client
 from lexica import Client as ApiClient
 from config import Config
 from Utils.telegraph import GraphClient
+import time
 
 # Get logging configurations
 logging.basicConfig(
