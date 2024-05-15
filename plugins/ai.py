@@ -41,7 +41,7 @@ async def askAboutImage(_:Client,m:t.Message,mediaFiles: list,prompt:str):
 
 
 @Client.on_message(filters.command(["assis"],  prefixes=["+", ".", "/", "-", "?", "$","#","&"]))
-async def chat(app :app, message):
+async def chat(Client : Client, message):
 
     try:
         start_time = time.time()
