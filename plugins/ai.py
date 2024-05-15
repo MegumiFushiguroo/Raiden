@@ -5,7 +5,6 @@ from Utils import getText,ChatCompletion,getMedia,geminiVision
 from lexica.constants import languageModels
 from gtts import gTTS
 import os, time
-from pyrogram import Client as app
 from pyrogram.enums import ChatAction
 
 @Client.on_message(filters.command([i for i in dir(languageModels) if not i.startswith("__")]))
@@ -48,7 +47,7 @@ async def chat(Client : Client, message):
 
     try:
         start_time = time.time()
-        await app.send_chat_action(chat_id = message.chat.id, action = ChatAction.TYPING)
+        await Client.send_chat_action(chat_id = message.chat.id, action = ChatAction.TYPING)
         if len(message.command) < 2:
             await message.reply_text(
             "**Hello! How can I assist you today?**")
@@ -61,7 +60,7 @@ async def chat(Client : Client, message):
             text = x    
             tts = gTTS(text, lang='en')
             tts.save('output.mp3')
-            await app.send_voice(chat_id=message.chat.id, voice='output.mp3')
+            await Client.send_voice(chat_id=message.chat.id, voice='output.mp3')
             os.remove('output.mp3')            
 
     except Exception as e:
