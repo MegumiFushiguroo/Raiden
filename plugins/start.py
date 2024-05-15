@@ -15,6 +15,7 @@ Commands:
 /palm: palm by google
 /reverse: reverse image search
 /gemini: gemini by google
+/assis: Ask anything bot will reply in voice format 
 '''
 
 Aaru ="https://telegra.ph/file/9567207165204df2503bf.jpg"
