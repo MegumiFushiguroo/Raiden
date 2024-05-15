@@ -48,7 +48,7 @@ async def chat(Client : Client, message):
 
     try:
         start_time = time.time()
-        await app.send_chat_action(message.chat.id, action = ChatAction.TYPING)
+        await app.send_chat_action(chat_id = message.chat.id, action = ChatAction.TYPING)
         if len(message.command) < 2:
             await message.reply_text(
             "**Hello! How can I assist you today?**")
