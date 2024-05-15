@@ -32,10 +32,5 @@
             "required": true,
             "value": ""
         }
-     "SUPPORT_CHAT" : { 
-            "description": "Ahjin_Sprt"
-            "required": true,
-            "value": ""
-        }
     }
 }
