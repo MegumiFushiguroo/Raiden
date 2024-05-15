@@ -18,6 +18,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 logging.getLogger("httpx").setLevel(logging.WARNING)
 LOGGER = logging.getLogger(__name__)
 
+StartTime = time.time()
 StartTime = None
 Models = None
 
