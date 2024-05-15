@@ -5,6 +5,8 @@ from Utils import getText,ChatCompletion,getMedia,geminiVision
 from lexica.constants import languageModels
 from gtts import gTTS
 import os, time
+import os, time
+import openai
 from pyrogram.enums import ChatAction
 
 openai.api_key = "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"
