@@ -20,17 +20,17 @@
         "BOT_TOKEN": {
             "description": "Your bot token. Get one from @BotFather duh",
             "required": true,
-            "value": "6729982361:AAHYXxhmuY6YbqoOZ7sshubhyAdazzwj9Bk"
+            "value": ""
         },
         "API_ID": {
             "description": "Get API_ID from my.telegram.org",
             "required": true,
-            "value": "29422639"
+            "value": ""
         },
         "API_HASH": {
             "description": "Get API_HASH from my.telegram.org",
             "required": true,
-            "value": "e21bccfd64a01c5762ce81c77379dc7f"
+            "value": ""
         }
     }
 }
