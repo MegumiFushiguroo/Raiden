@@ -6,3 +6,4 @@ httpx[http2]
 python-dotenv
 gtts
 openai==0.28.0
+ast
